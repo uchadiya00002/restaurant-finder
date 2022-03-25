@@ -1,0 +1,34 @@
+-- for help ====\?
+
+-- to list database we have====   \l
+
+-- to exit current command  ====  \q
+
+-- to create database ==== CREATE DATABASE database_name
+
+-- to connect to a new database ==== \c database_name
+
+--  to create a table ==== CREATE TABLE products (
+--     id INT,  name VARCHAR(50)  ,price INT,  on_sale boolean);
+
+-- to check if any table is available ==== \d 
+
+-- to check want properties available in table ==== \d table_name
+
+-- to add column in a table ====   ALTER TABLE table_name ADD COLUMN coulumn_name column_datatype;
+
+-- to add column in a table ====   ALTER TABLE table_name DROP COLUMN coulumn_name ;
+
+-- to DROP or DELETE the table ==== DROP TABLE table_name;
+
+-- to DROP or DELETE the database ==== DROP DATABASE  database_name;
+
+
+    CREATE TABLE restaurants (
+        id BIGSERIAL NOT NULL PRIMARY KEY,
+        name VARCHAR(50) NOT NULL,
+        location VARCHAR(50) NOT NULL,
+        price_range INT NOT NULL check(price_range >=1 and  price_range<=5) );
+
+        INSERT INTO restaurants (id, name , location , price_range) values (123, 'mcdonalds', 'new york',7 );
+    
