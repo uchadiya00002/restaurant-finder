@@ -1,7 +1,7 @@
 import React from "react";
-import AddRestaurant from "../components/add-restaurant/AddRestaurant";
-import Header from "../components/header/Header";
-import RestaurantsList from "../components/restaurants-list/RestaurantsList";
+import AddRestaurant from "../components/AddRestaurant";
+import Header from "../components/Header";
+import RestaurantsList from "../components/RestaurantsList";
 
 const Home = () => {
   return (
