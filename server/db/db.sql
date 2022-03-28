@@ -31,5 +31,5 @@
         review TEXT NOT NULL,
         rating INT NOT NULL check(rating >=1 and  rating<=5) );
 
-        INSERT INTO reviews (name , review , rating) values ('Avinash', 'Restaurtant was awesome',4 );
+        INSERT INTO reviews (restaurant_id, name , review , rating) values (2,'Poonam', 'Loved the food there',5 );
     
