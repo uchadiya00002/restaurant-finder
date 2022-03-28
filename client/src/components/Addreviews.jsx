@@ -39,20 +39,23 @@ const Addreviews = () => {
             />
           </div>
           <div className="form-group col-4">
-            <label htmlFor="rating">Rating</label>
-            <select
-              value={rating}
-              onChange={(e) => setRating(e.target.value)}
-              id="rating"
-              className="custom-select"
-            >
-              <option disabled>Rating</option>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-            </select>
+            <span>
+              <label htmlFor="rating">Rating</label>
+              <br />
+              <select
+                value={rating}
+                onChange={(e) => setRating(e.target.value)}
+                id="rating"
+                className="custom-select"
+              >
+                <option disabled>Rating</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+            </span>
           </div>
         </div>
         <div className="form-group">
